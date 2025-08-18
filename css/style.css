@@ -407,3 +407,103 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+/* =========================================
+   Media Queries for Responsiveness
+   ========================================= */
+
+/* Tablets & Small Laptops */
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .course-cards,
+    .faculty-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Smaller Tablets & Large Phones */
+@media (max-width: 768px) {
+    header {
+        position: static; /* Remove fixed positioning on smaller screens */
+    }
+
+    header nav .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header ul {
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow nav items to wrap if needed */
+    }
+
+    /* Reset padding-top for sections since header is no longer fixed */
+    main section {
+        padding: 40px 0;
+    }
+
+    #hero {
+        height: auto;
+        padding: 60px 0; /* Adjust padding as header is not fixed */
+        min-height: 50vh;
+        text-align: center;
+    }
+
+    .page-hero {
+        padding: 60px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+    }
+
+    .contact-wrapper,
+    .course-cards,
+    .faculty-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
