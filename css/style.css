@@ -1,0 +1,409 @@
+/*
+   Color Palette for Improvise Academy
+   Based on Numerology Number 2: Harmony, Balance, Cooperation
+   Colors: Blue, Green, Silver, White/Cream
+*/
+
+:root {
+    --primary-color: #007BFF; /* Professional Blue for trust and intelligence */
+    --secondary-color: #28a745; /* Calming Green for growth and success */
+    --accent-color: #f8f9fa; /* Light Silver/Grey for accents and backgrounds */
+    --text-color: #333333; /* Dark Grey for readability */
+    --background-color: #FFFFFF; /* Clean White background */
+    --light-cream-bg: #fdfdf5; /* A very light cream for subtle warmth */
+}
+
+/* Basic Resets and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: var(--primary-color);
+}
+
+#hero {
+    background: var(--light-cream-bg);
+    color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* To offset fixed header */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.page-hero {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 120px 0 60px 0; /* Extra padding top for fixed header */
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+}
+
+#courses .container {
+    text-align: center;
+}
+
+.course-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 32%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+#faculty .container, #results .container, #google-reviews .container {
+    text-align: center;
+}
+
+.faculty-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.faculty-cards .card h3 {
+    margin-bottom: 5px;
+}
+
+.faculty-cards .card h4 {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.testimonial-cards {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: var(--light-cream-bg);
+    border-left: 5px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    text-align: right;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#google-reviews {
+    background: var(--accent-color);
+}
+
+.reviews-placeholder {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+}
+
+#contact .container {
+    text-align: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+}
+
+.contact-form h3, .contact-info h3 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+}
+
+#faq .container {
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 20px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-answer p {
+    padding: 0 0 20px;
+    line-height: 1.7;
+}
+
+#blog-listing .container, #blog-content .container {
+    text-align: left;
+}
+
+.blog-post-summary {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.blog-post-summary:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.blog-post-summary h2 a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-post-summary h2 a:hover {
+    color: var(--primary-color);
+}
+
+.post-meta {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.blog-container {
+    max-width: 800px;
+}
+
+#blog-content h3 {
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#blog-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main section {
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+
+footer {
+    background: var(--text-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
