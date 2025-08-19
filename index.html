@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Improvise Academy | Modern Coaching for JEE & NEET</title>
-    <meta name="description" content="Improvise Academy offers modern, high-conversion coaching in Kolkata for JEE, NEET, and board exams. Book a free demo class today!">
-    <meta name="keywords" content="JEE coaching Kolkata, NEET coaching, Improvise Academy, best coaching center, engineering entrance, medical entrance">
+    <title>Improvise Academy | Premier JEE & NEET Coaching in Kolkata</title>
+    <meta name="description" content="Improvise Academy is Kolkata's premier coaching center for JEE Main & Advanced, NEET, and board exams. We offer personalized mentorship and proven strategies for success.">
+    <meta name="keywords" content="JEE coaching Kolkata, NEET coaching Kolkata, best coaching in Kolkata, Improvise Academy, medical entrance coaching, engineering entrance coaching">
 
-    <!-- Google Fonts: Poppins -->
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Improvise Academy",
+      "url": "https://www.improviseacademy.com",
+      "logo": "https://www.improviseacademy.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-98765-43210",
+        "contactType": "customer service"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Education Street, Park Circus",
+        "addressLocality": "Kolkata",
+        "postalCode": "700017",
+        "addressRegion": "WB",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts: Poppins (Headings) & Lato (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Google Analytics & Search Console Placeholder -->
+    <!-- Google Analytics Placeholder -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -22,7 +49,6 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     </script>
-    <!-- End Google Analytics -->
 </head>
 <body>
     <header id="main-header">
@@ -41,19 +67,18 @@
     </header>
 
     <main>
-        <section id="hero" class="section-padding">
+        <section id="hero">
+            <div class="hero-overlay"></div>
             <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-text">
-                        <h1>Unlock Top Ranks in JEE & NEET with Kolkata's Most Trusted Coaching Academy.</h1>
-                        <p>Searching for the best JEE or NEET coaching in Kolkata? Improvise Academy offers personalized mentorship and proven strategies to help you ace the toughest entrance exams. Join hundreds of successful students from your city.</p>
-                        <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-primary btn-lg">Book a Free Demo</a>
-                            <a href="https://wa.me/919876543210" class="btn btn-secondary btn-lg" style="background: var(--color-text); border-color: var(--color-text); color: var(--color-white);">WhatsApp Us</a>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <img src="https://source.unsplash.com/400x600/?student,studying,indian" alt="Improvise Academy Student">
+                <div class="hero-content">
+                    <h1>Unlock Top Ranks in JEE & NEET with Kolkata's Most Trusted Coaching Academy.</h1>
+                    <p>Personalized mentorship, proven strategies, and a legacy of success. Your journey to a top engineering or medical college starts here.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-lg">Book a Free Demo</a>
+                        <a href="https://wa.me/919876543210" class="btn btn-secondary btn-lg">
+                            <svg class="whatsapp-icon-btn" viewBox="0 0 24 24"><path fill="currentColor" d="M16.75 13.96c-.25-.12-1.47-.72-1.7-.84-.22-.12-.38-.2-.53.12-.15.32-.64.84-.78 1.02-.14.18-.28.2-.53.06-.25-.12-1.05-.38-2-1.22-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.02-.38.1-.5.12-.12.25-.3.38-.45.12-.15.18-.25.28-.42.1-.17.05-.32-.02-.44-.08-.12-.53-1.28-.73-1.75-.2-.48-.4-.4-.53-.4h-.4c-.15 0-.38.06-.53.25-.15.18-.64.6-..64 1.5 0 .9.66 1.73.76 1.85.1.12 1.25 1.9 3.03 2.65.43.18.78.28 1.05.36.48.12.9.1.9.1.25-.12.64-.6.73-.73.1-.12.1-.25.04-.37-.04-.12-.1-.18-.2-.24zM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18.5c-4.7 0-8.5-3.8-8.5-8.5S7.3 3.5 12 3.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"></path></svg>
+                            <span>WhatsApp Us</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -67,160 +92,88 @@
                 </div>
                 <div class="course-grid">
                     <div class="course-card">
-                        <div class="card-icon" style="background-color: #e9c46a;">🚀</div>
+                        <div class="card-icon">🚀</div>
                         <h3>JEE (Main + Adv)</h3>
                         <p>Rigorous preparation for India's premier engineering entrance examinations.</p>
-                        <a href="#" class="card-link">Learn More &rarr;</a>
                     </div>
                     <div class="course-card">
-                        <div class="card-icon" style="background-color: #f4a261;">⚕️</div>
+                        <div class="card-icon">⚕️</div>
                         <h3>NEET (UG)</h3>
                         <p>Comprehensive coaching for aspiring medical students aiming for top colleges.</p>
-                        <a href="#" class="card-link">Learn More &rarr;</a>
                     </div>
                     <div class="course-card">
-                        <div class="card-icon" style="background-color: #e76f51;">📚</div>
+                        <div class="card-icon">📚</div>
                         <h3>Foundation Courses</h3>
                         <p>Build a strong base in science and maths from Class VIII to X for future success.</p>
-                        <a href="#" class="card-link">Learn More &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="faculty" class="section-padding" style="background-color: var(--color-white);">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Meet Our Expert Mentors</h2>
-                    <p>Learn from a team of highly experienced and dedicated educators.</p>
-                </div>
-                <div class="faculty-grid">
-                    <div class="faculty-card">
-                        <div class="faculty-image">
-                            <img src="https://via.placeholder.com/300x300/8E44AD/ffffff?text=Prof.+A" alt="Faculty Member">
-                        </div>
-                        <div class="faculty-info">
-                            <h3>Mr. R. Sharma</h3>
-                            <span>Physics, Ex-IITian</span>
-                        </div>
-                    </div>
-                    <div class="faculty-card">
-                        <div class="faculty-image">
-                            <img src="https://via.placeholder.com/300x300/3498DB/ffffff?text=Dr.+S" alt="Faculty Member">
-                        </div>
-                        <div class="faculty-info">
-                            <h3>Dr. S. Verma</h3>
-                            <span>Chemistry, PhD</span>
-                        </div>
-                    </div>
-                    <div class="faculty-card">
-                        <div class="faculty-image">
-                            <img src="https://via.placeholder.com/300x300/F1C40F/000000?text=Prof.+P" alt="Faculty Member">
-                        </div>
-                        <div class="faculty-info">
-                            <h3>Mrs. P. Das</h3>
-                            <span>Biology, 15+ Yrs Exp.</span>
-                        </div>
-                    </div>
-                     <div class="faculty-card">
-                        <div class="faculty-image">
-                            <img src="https://via.placeholder.com/300x300/2C3E50/ffffff?text=Mr.+K" alt="Faculty Member">
-                        </div>
-                        <div class="faculty-info">
-                            <h3>Mr. K. Roy</h3>
-                            <span>Mathematics, MSc Gold Medalist</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="stats" class="section-padding">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3>10,000+</h3>
-                        <p>Students Trained</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>15+</h3>
-                        <p>Years of Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>95%</h3>
-                        <p>Success Rate</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>4.8 ⭐</h3>
-                        <p>Google Rating</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="section-padding">
+        <section id="testimonials" class="section-padding" style="background-color: var(--color-white);">
             <div class="container">
                 <div class="section-title">
                     <h2>Success Stories from Our Students</h2>
-                    <p>We're proud of the results our students achieve year after year.</p>
                 </div>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card">
-                        <p>"The personalized attention and amazing faculty at Improvise Academy were the reason I cracked JEE with a top rank. Highly recommended!"</p>
-                        <div class="student-info">
-                            <img src="https://via.placeholder.com/100x100/3498DB/ffffff?text=A" alt="Student Anjali">
-                            <div class="student-details">
-                                <h4>Anjali Singh</h4>
-                                <span>JEE Advanced, AIR 1024</span>
+                <div class="swiper testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <p>"The personalized attention and amazing faculty at Improvise Academy were the reason I cracked JEE with a top rank. Highly recommended!"</p>
+                                <div class="student-info">
+                                    <img src="https://source.unsplash.com/100x100/?portrait,student,male" alt="Student">
+                                    <div class="student-details"><h4>Ankit Sharma</h4><span>JEE Advanced, AIR 1024</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                             <div class="testimonial-card">
+                                <p>"The mock tests were exactly like the real NEET exam. It helped me manage my time and stress, leading to my success. Thank you, Improvise!"</p>
+                                <div class="student-info">
+                                    <img src="https://source.unsplash.com/100x100/?portrait,student,female" alt="Student">
+                                    <div class="student-details"><h4>Priya Das</h4><span>NEET, 680/720</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <p>"The mock tests were exactly like the real NEET exam. It helped me manage my time and stress, leading to my success. Thank you, Improvise!"</p>
-                        <div class="student-info">
-                            <img src="https://via.placeholder.com/100x100/8E44AD/ffffff?text=R" alt="Student Rohan">
-                            <div class="student-details">
-                                <h4>Rohan Gupta</h4>
-                                <span>NEET, 680/720</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
-        <section id="reviews" class="section-padding" style="background-color: var(--color-white);">
+        <section id="reviews" class="section-padding">
             <div class="container">
                 <div class="section-title">
-                    <h2>What Parents & Students Say on Google</h2>
+                    <h2>Rated Excellent on Google</h2>
                 </div>
-                <div class="reviews-placeholder">
-                    <p><strong>A live Google Reviews carousel will be integrated here soon!</strong></p>
-                    <div class="static-review">
-                        <p>"The best coaching center in Kolkata. The teachers are very supportive and the study materials are top-notch."<br>- S. Bannerjee (⭐⭐⭐⭐⭐)</p>
+                <div class="google-rating-summary">
+                    <span>★ 4.8/5 from 150+ reviews</span>
+                </div>
+                <div class="swiper reviews-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="review-card"><p>"The best coaching center in Kolkata. The teachers are very supportive."</p><h4>- S. Bannerjee ⭐⭐⭐⭐⭐</h4></div></div>
+                        <div class="swiper-slide"><div class="review-card"><p>"A fantastic place for foundation courses. My child's concepts have improved immensely."</p><h4>- R. Gupta ⭐⭐⭐⭐⭐</h4></div></div>
+                        <div class="swiper-slide"><div class="review-card"><p>"Highly professional and result-oriented. The study materials are top-notch."</p><h4>- A. Khan ⭐⭐⭐⭐</h4></div></div>
+                        <div class="swiper-slide"><div class="review-card"><p>"Great environment for learning and growing. The faculty is second to none."</p><h4>- M. Jones ⭐⭐⭐⭐⭐</h4></div></div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="section-padding">
+        <section id="faq" class="section-padding" style="background-color: var(--color-white);">
             <div class="container">
                 <div class="section-title">
-                    <h2>Frequently Asked Questions</h2>
+                    <h2>Have Questions? Look Here.</h2>
+                    <p>Find quick answers to common questions about our courses and admission process.</p>
                 </div>
                 <div class="faq-accordion">
-                    <div class="faq-item">
-                        <button class="faq-question">What makes Improvise Academy different?</button>
-                        <div class="faq-answer"><p>We focus on personalized mentorship, small batch sizes, and a results-driven methodology. Our experienced faculty provides individual attention to every student, which is our key differentiator.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">Do you offer trial classes?</button>
-                        <div class="faq-answer"><p>Yes! We offer a free demo class where students can experience our teaching style, interact with faculty, and understand our approach before making a commitment.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">How do you track student performance?</button>
-                        <div class="faq-answer"><p>We conduct regular topic-wise tests, surprise quizzes, and full-length mock exams. Performance is meticulously tracked, and parents are updated through regular PTMs and our performance tracking app.</p></div>
-                    </div>
+                    <div class="faq-item"><button class="faq-question">What courses do you offer at Improvise Academy?</button><div class="faq-answer"><p>We offer comprehensive coaching for JEE (Main & Advanced), NEET (UG), and Foundation courses for students in classes VIII, IX, and X to build a strong base for future competitive exams.</p></div></div>
+                    <div class="faq-item"><button class="faq-question">Do you provide both online and offline classes?</button><div class="faq-answer"><p>Yes, we provide both online and offline classes. Our hybrid model allows students to choose the mode of learning that best suits their needs, ensuring flexibility and accessibility for everyone.</p></div></div>
+                    <div class="faq-item"><button class="faq-question">How can I book a free demo class?</button><div class="faq-answer"><p>You can book a free demo class by filling out the contact form on our website or by calling us directly at our contact number. Our counselors will schedule a session for you at your convenience.</p></div></div>
+                    <div class="faq-item"><button class="faq-question">What kind of study material do you provide?</button><div class="faq-answer"><p>We provide meticulously researched, in-house study materials that are fully updated with the latest exam patterns. This includes topic-wise booklets, practice question banks, and a series of mock tests.</p></div></div>
+                    <div class="faq-item"><button class="faq-question">How do you handle doubt-clearing for students?</button><div class="faq-answer"><p>We have dedicated doubt-clearing sessions where students can ask questions one-on-one with our faculty. We also have a 24/7 online portal and small batch sizes to ensure every doubt is addressed.</p></div></div>
                 </div>
             </div>
         </section>
@@ -232,34 +185,34 @@
           "@type": "FAQPage",
           "mainEntity": [
             {
-              "@type": "Question",
-              "name": "What makes Improvise Academy different?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We focus on personalized mentorship, small batch sizes, and a results-driven methodology. Our experienced faculty provides individual attention to every student, which is our key differentiator."
-              }
+                "@type": "Question",
+                "name": "What courses do you offer at Improvise Academy?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer comprehensive coaching for JEE (Main & Advanced), NEET (UG), and Foundation courses for students in classes VIII, IX, and X to build a strong base for future competitive exams."
+                }
             },
             {
-              "@type": "Question",
-              "name": "Do you offer trial classes?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes! We offer a free demo class where students can experience our teaching style, interact with faculty, and understand our approach before making a commitment."
-              }
+                "@type": "Question",
+                "name": "Do you provide both online and offline classes?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we provide both online and offline classes. Our hybrid model allows students to choose the mode of learning that best suits their needs, ensuring flexibility and accessibility for everyone."
+                }
             },
             {
-              "@type": "Question",
-              "name": "How do you track student performance?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We conduct regular topic-wise tests, surprise quizzes, and full-length mock exams. Performance is meticulously tracked, and parents are updated through regular PTMs and our performance tracking app."
-              }
+                "@type": "Question",
+                "name": "How can I book a free demo class?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can book a free demo class by filling out the contact form on our website or by calling us directly at our contact number. Our counselors will schedule a session for you at your convenience."
+                }
             }
           ]
         }
         </script>
 
-        <section id="blog-preview" class="section-padding" style="background-color: var(--color-white);">
+        <section id="blog-preview" class="section-padding">
             <div class="container">
                 <div class="section-title">
                     <h2>Latest News & Resources</h2>
@@ -267,69 +220,78 @@
                 </div>
                 <div class="blog-preview-grid">
                     <div class="blog-card">
-                        <img src="https://via.placeholder.com/400x250/8E44AD/ffffff?text=Blog+Post" alt="Blog Post Image">
+                        <img src="https://source.unsplash.com/400x250/?studying,exam" alt="Blog Post Image">
                         <div class="blog-card-content">
+                            <span class="blog-category">Exam Strategy</span>
                             <h3>7 Mistakes to Avoid in Your JEE Main Preparation</h3>
                             <p>Discover the common pitfalls that students face and learn how to steer clear of them for a better rank.</p>
-                            <a href="#" class="card-link">Read More &rarr;</a>
                         </div>
                     </div>
                     <div class="blog-card">
-                        <img src="https://via.placeholder.com/400x250/3498DB/ffffff?text=Blog+Post" alt="Blog Post Image">
+                        <img src="https://source.unsplash.com/400x250/?science,chemistry" alt="Blog Post Image">
                         <div class="blog-card-content">
+                            <span class="blog-category">Subject Tips</span>
                             <h3>The Ultimate Guide to Mastering Organic Chemistry for NEET</h3>
                             <p>A comprehensive guide to help you tackle one of the most challenging subjects in the NEET exam.</p>
-                            <a href="#" class="card-link">Read More &rarr;</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section-padding">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Get in Touch</h2>
-                    <p>Have questions? Want to book a demo? We're here to help.</p>
-                </div>
-                <div class="contact-grid">
-                    <div class="contact-form-container">
-                        <form action="#">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="tel" placeholder="Phone Number" required>
-                            <input type="email" placeholder="Email Address" required>
-                            <select required>
-                                <option value="">I'm interested in...</option>
-                                <option value="jee">JEE Coaching</option>
-                                <option value="neet">NEET Coaching</option>
-                                <option value="foundation">Foundation Courses</option>
-                            </select>
-                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Inquiry</button>
-                        </form>
-                    </div>
-                    <div class="contact-details-container">
-                        <div class="map-container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.8954911718!2d88.18261314392942!3d22.53542732789139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1678886304555!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="blog-card">
+                        <img src="https://source.unsplash.com/400x250/?motivation,student" alt="Blog Post Image">
+                        <div class="blog-card-content">
+                            <span class="blog-category">Motivation</span>
+                            <h3>How to Stay Motivated During a 2-Year Preparation Journey</h3>
+                            <p>Maintaining focus and motivation is key. Here are some tips to stay on track throughout your preparation.</p>
                         </div>
-                        <p><strong>Address:</strong> 123 Education Street, Park Circus, Kolkata</p>
-                        <p><strong>Phone:</strong> +91 98765 43210</p>
-                        <p><strong>Email:</strong> info@improviseacademy.com</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer id="main-footer-bottom">
+    <footer id="main-footer" class="section-padding">
         <div class="container">
-            <p>&copy; 2025 Improvise Academy. All Rights Reserved. Designed with ❤️.</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Improvise Academy</h3>
+                    <p>Your journey to excellence in engineering and medical entrance exams starts here. We are committed to your success.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#blog-preview">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>123 Education Street, Park Circus, Kolkata</p>
+                    <p>info@improviseacademy.com</p>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IN</a>
+                        <a href="#" aria-label="LinkedIn">LI</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Improvise Academy. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
-        💬
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
     </a>
 
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
